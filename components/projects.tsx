@@ -8,21 +8,24 @@ import { useInView } from 'react-intersection-observer'
 import { useActiveContext } from '@/context/active-section-context'
 
 export default function Projects() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  })
-  const { setActiveSection, timeOfLastClick } = useActiveContext()
+  {/*const { ref, inView } = useInView({*/ }
+  {/*threshold: 0.5,*/ }
+  {/*})*/ }
+  {/*const { setActiveSection, timeOfLastClick } = useActiveContext()*/ }
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("Projects")
-    }
-  }, [inView, setActiveSection, timeOfLastClick])
+  {/*useEffect(() => {*/ }
+  {/*if (inView && Date.now() - timeOfLastClick > 1000) {*/ }
+  {/*setActiveSection("Projects")*/ }
+  {/*}*/ }
+  {/*}, [inView, setActiveSection, timeOfLastClick])*/ }
 
-  console.log(inView)
+  {/*console.log(inView)*/ }
 
   return (
-    <section ref={ref} id="projects" className='scroll-mt-28 mb-28'>
+    <section
+      //ref={ref} 
+      id="projects"
+      className='scroll-mt-28 mb-28'>
       <SectionHeading>My Projects</SectionHeading>
       {
         projectsData.map((project, index) => (

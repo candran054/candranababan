@@ -7,20 +7,20 @@ import { useInView } from 'react-intersection-observer'
 import { useActiveContext } from '@/context/active-section-context'
 
 export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  })
-  const { setActiveSection, timeOfLastClick } = useActiveContext()
+  {/*const { ref, inView } = useInView({*/ }
+  {/*threshold: 0.75,*/ }
+  {/*})*/ }
+  {/*const { setActiveSection, timeOfLastClick } = useActiveContext()*/ }
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("About")
-    }
-  }, [inView, setActiveSection, timeOfLastClick])
+  {/*useEffect(() => {*/ }
+  {/*if (inView && Date.now() - timeOfLastClick > 1000) {*/ }
+  {/*setActiveSection("About")*/ }
+  {/*}*/ }
+  {/*}, [inView, setActiveSection, timeOfLastClick])*/ }
 
   return (
     <motion.section
-      ref={ref}
+      //ref={ref}
       id="about"
       className='mb-28 max-w-[45rem] leading-8 sm:mb-40 text-center scroll-mt-28'
       initial={{ opacity: 0, y: 100 }}

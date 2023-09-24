@@ -5,19 +5,19 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { motion } from "framer-motion";
 
-{/*const fadeInAnimationVariants = {*/ }
-{/*initial: {*/ }
-{/*opacity: 0,*/ }
-{/*y: 100,*/ }
-{/*},*/ }
-{/*animate: (index: number) => ({*/ }
-{/*opacity: 1,*/ }
-{/*y: 0,*/ }
-{/*transition: {*/ }
-{/*delay: 0.05 * index,*/ }
-{/*},*/ }
-{/*}),*/ }
-{/*};*/ }
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    }
+  })
+}
 
 export default function Skills() {
   //const { ref } = useSectionInView("Skills");
@@ -32,7 +32,15 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className=" cursor-pointer bg-white border border-black hover:bg-gray-200 transition rounded-xl px-5 py-3 bg-white/10 dark:text-black"
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true
+            }}
+            custom={index}
+            className="cursor-pointer bg-white border border-black/[0.1] hover:bg-gray-200
+            transition rounded-xl px-5 py-3 bg-white/10"
             key={index}
           //variants={fadeInAnimationVariants}
           //initial="initial"
