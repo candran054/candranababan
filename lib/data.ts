@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import instanx from "../public/instanx.png"
+import appinstanx from "../public/app-instanx.png"
 import dappstrt from "../public/dapp-strt.png"
 import mataair from "../public/mata-air-LP.png"
 
@@ -73,7 +74,7 @@ export const projectsData = [
     description:
       "The App for InstanX, which i create with other Software Engineer. I build functionality such as Register, Login, OTP Verification, User Profile Integration",
     tags: ["React", "Next.js", "Tailwind", "TypeScript"],
-    imageUrl: instanx,
+    imageUrl: appinstanx,
   },
   {
     title: "Dapp STRT Button",

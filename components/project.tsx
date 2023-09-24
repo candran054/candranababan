@@ -29,11 +29,11 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress
       }}
-      className="mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className='group relative bg-gray-100 max-w-[42rem] border border-black/5 
-      overflow-hidden sm:pr-8 sm:h-[20rem]  hover:bg-gray-200 transition'
+        className='relative bg-gray-100 max-w-[42rem] border border-black/5 
+      overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 transition rounded-lg'
       >
         <div className='flex flex-col h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10
         sm:max-w-[50%] group-odd:ml-[21rem]'
