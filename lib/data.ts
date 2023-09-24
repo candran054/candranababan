@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import instanx from "@public/instanx.png"
-import dappstrt from "@public/dapp-strt.png"
-import mataair from "@public/mata-air-LP.png"
+import instanx from "../public/instanx.png"
+import dappstrt from "../public/dapp-strt.png"
+import mataair from "../public/mata-air-LP.png"
 
 export const links = [
   {
@@ -60,29 +60,36 @@ export const experiencesData = [
   },
 ] as const;
 
-/*export const projectsData = [*/
-/*{*/
-/*title: "InstanX",*/
-/*description:*/
-/*"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",*/
-/*tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],*/
-/*imageUrl: instanx,*/
-/*},*/
-/*{*/
-/*title: "Dapp STRT Button",*/
-/*description:*/
-/*"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",*/
-/*tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],*/
-/*imageUrl: dappstrt,*/
-/*},*/
-/*{*/
-/*title: "Mata Air LP",*/
-/*description:*/
-/*"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",*/
-/*tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],*/
-/*imageUrl: mataair,*/
-/*},*/
-/*] as const;*/
+export const projectsData = [
+  {
+    title: "InstanX",
+    description:
+      "I worked as a Frontend developer on this startup project for a Months. This is the Landing Page for our project which called InstanX.",
+    tags: ["React", "Next.js", "Tailwind", "Framer"],
+    imageUrl: instanx,
+  },
+  {
+    title: "InstanX App",
+    description:
+      "The App for InstanX, which i create with other Software Engineer. I build functionality such as Register, Login, OTP Verification, User Profile Integration",
+    tags: ["React", "Next.js", "Tailwind", "TypeScript"],
+    imageUrl: instanx,
+  },
+  {
+    title: "Dapp STRT Button",
+    description:
+      "Blockchain dapp for STRT Button that i worked with several other Software Engineer.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
+    imageUrl: dappstrt,
+  },
+  {
+    title: "Mata Air LP",
+    description:
+      "A Landing Page website for one of client of my company.",
+    tags: ["React", "Next.js", "Tailwind", "Framer"],
+    imageUrl: mataair,
+  },
+] as const;
 
 export const skillsData = [
   "HTML",
