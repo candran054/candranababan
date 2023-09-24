@@ -11,19 +11,22 @@ import { useInView } from 'react-intersection-observer'
 import { useActiveContext } from '@/context/active-section-context'
 
 export default function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  })
-  const { setActiveSection, timeOfLastClick } = useActiveContext()
+  {/*const { ref, inView } = useInView({*/ }
+  {/*threshold: 0.5,*/ }
+  {/*})*/ }
+  {/*const { setActiveSection, timeOfLastClick } = useActiveContext()*/ }
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("Home")
-    }
-  }, [inView, setActiveSection, timeOfLastClick])
+  {/*useEffect(() => {*/ }
+  {/*if (inView && Date.now() - timeOfLastClick > 1000) {*/ }
+  {/*setActiveSection("Home")*/ }
+  {/*}*/ }
+  {/*}, [inView, setActiveSection, timeOfLastClick])*/ }
 
   return (
-    <section ref={ref} id="home" className='mb-28 sm:mb-0 max-w-[50rem] text-center scroll-mt-[100rem]'>
+    <section
+      //ref={ref} 
+      id="home"
+      className='mb-28 sm:mb-0 max-w-[50rem] text-center scroll-mt-[100rem]'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -83,7 +86,10 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link target="_blank" href="https://wa.me/6282165617569?text=Hi !" className='group bg-gray-900 text-white px-7
+        <Link
+          //href="#contact"
+          target="_blank" href="https://wa.me/6285156602453?text=Hi !"
+          className='group bg-gray-900 text-white px-7
           py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110
           hover:scale-110 hover:bg-gray-950 active:scale-105 transition
         '>
@@ -93,21 +99,21 @@ export default function Intro() {
 
         <a href='/CandraCV.pdf' download={true} className='group bg-white flex items-center px-7 py-3 gap-2
           rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105
-          transition cursor-pointer border border-black/10
+          transition cursor-pointer borderBlack 
         '>
           Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
         </a>
 
         <a className='bg-white flex items-center p-4 text-gray-700 gap-2
           rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-          transition cursor-pointer border border-black/10' href="https://www.linkedin.com/in/candra-nababan-285178140/"
+          transition cursor-pointer borderBlack' href="https://www.linkedin.com/in/candra-nababan-285178140/"
           target='_blank'
         >
           <BsLinkedin />
         </a>
 
         <a className='bg-white flex items-center p-4 text-gray-700 gap-2
-          rounded-full text-[1.30rem] active:scale-105 transition cursor-pointer border border-black/10
+          rounded-full text-[1.30rem] active:scale-105 transition cursor-pointer borderBlack 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950' href="https://github.com/candran054" target='_blank'>
           <FaGithubSquare />
         </a>

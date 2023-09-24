@@ -5,7 +5,7 @@ import { links } from '@/lib/data'
 
 type SectionName = typeof links[number]["name"]
 
-type ActiveSectionContextProps = {
+type ActiveSectionContextProviderProps = {
   children: React.ReactNode
 }
 
@@ -20,7 +20,7 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 
 export default function ActiveSectionContextProvider({
   children,
-}: ActiveSectionContextProps) {
+}: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home")
   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0)
 
