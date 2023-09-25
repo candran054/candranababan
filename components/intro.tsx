@@ -7,24 +7,14 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
-import { useInView } from 'react-intersection-observer'
-import { useActiveContext } from '@/context/active-section-context'
+import { useSectionInView } from '@/lib/hooks'
 
 export default function Intro() {
-  {/*const { ref, inView } = useInView({*/ }
-  {/*threshold: 0.5,*/ }
-  {/*})*/ }
-  {/*const { setActiveSection, timeOfLastClick } = useActiveContext()*/ }
-
-  {/*useEffect(() => {*/ }
-  {/*if (inView && Date.now() - timeOfLastClick > 1000) {*/ }
-  {/*setActiveSection("Home")*/ }
-  {/*}*/ }
-  {/*}, [inView, setActiveSection, timeOfLastClick])*/ }
+  const { ref } = useSectionInView("Home", 0.5)
 
   return (
     <section
-      //ref={ref} 
+      ref={ref}
       id="home"
       className='mb-28 sm:mb-0 max-w-[50rem] text-center scroll-mt-[100rem]'>
       <div className='flex items-center justify-center'>
