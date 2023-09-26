@@ -55,8 +55,7 @@ export default function Header() {
                       stiffness: 380,
                       damping: 30,
                     }}
-                  ></motion.span>
-                )}
+                  />)}
               </Link>
             </motion.li>
           ))}

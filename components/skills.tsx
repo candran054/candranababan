@@ -40,8 +40,8 @@ export default function Skills() {
               once: true
             }}
             custom={index}
-            className="cursor-pointer bg-white border border-black/[0.1] hover:bg-gray-200
-            transition rounded-xl px-5 py-3 bg-white/10"
+            className="cursor-pointer bg-white border border-black/[0.1] 
+            hover:bg-gray-200 transition rounded-xl px-5 py-3 bg-white/10"
             key={index}
           //variants={fadeInAnimationVariants}
           //initial="initial"
