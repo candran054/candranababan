@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
@@ -87,24 +87,27 @@ export default function Intro() {
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
-        <a href='/CandraCV.pdf' download={true} className='group bg-white flex items-center px-7 py-3 gap-2
-          rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105
-          transition cursor-pointer borderBlack 
+        <a href='/CandraCV.pdf' download={true} className='group bg-white flex 
+        items-center px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 
+        hover:scale-110 active:scale-105 transition cursor-pointer borderBlack 
         '>
-          Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+          Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 
+          transition' />
         </a>
 
         <a className='bg-white flex items-center p-4 text-gray-700 gap-2
-          rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
-          transition cursor-pointer borderBlack' href="https://www.linkedin.com/in/candra-nababan-285178140/"
+          rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 
+          active:scale-105 transition cursor-pointer borderBlack'
+          href="https://www.linkedin.com/in/candra-nababan-285178140/"
           target='_blank'
         >
           <BsLinkedin />
         </a>
 
         <a className='bg-white flex items-center p-4 text-gray-700 gap-2
-          rounded-full text-[1.30rem] active:scale-105 transition cursor-pointer borderBlack 
-          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950' href="https://github.com/candran054" target='_blank'>
+          rounded-full text-[1.30rem] active:scale-105 transition cursor-pointer 
+          borderBlack focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950'
+          href="https://github.com/candran054" target='_blank'>
           <FaGithubSquare />
         </a>
       </motion.div>
